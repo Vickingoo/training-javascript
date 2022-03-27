@@ -207,24 +207,171 @@
 //     alert("coge bufanda");
 //     break;
 //   case temperature >= 15 && temperature <= 25:
-//     alert("nos vamos a pedregalejo");
+//     alert("vamos a pedregalejo");
 //     break;
 //   case temperature >= 25:
 //     alert("cuélate en la piscina del vecino");
 //     break;
 //   default:
-//     console.log("pregúntale a Roberto Brasero");
+//     alert("pregúntale a Roberto Brasero");
 // }
 
-// EJERCICIO JAVASCRIPT 4 por completar
+// EJERCICIO JAVASCRIPT 3 opcion 2 con IF y ELSE pendiente de revisar
+// let temperature = 0;
+// temperature = prompt("¿Qué temperatura hace fuera?");
 
-let semaforo = prompt ("")
-console.log(semaforo);
-switch (true) {
-    case semaforo:
-        console.log("isGreen")
-    break;
-    case semaforo:
-        console.log("isRed")
-    break;
-}
+// if (temperature < 15) {
+//     alert("coge bufanda")
+//   }
+//   else if (temperature >= 15 && temperature <= 25) {
+//     alert("vamos a pedregalejo");
+//   }
+//   else if (temperature >= 25):
+//     alert("cuélate en la piscina del vecino") {
+// }
+//   default:
+//     alert("pregúntale a Roberto Brasero");
+// }
+
+// EJERCICIO JAVASCRIPT 4
+// con opcion de negacion (!) que seria igual que false
+// let isGreen = true;
+// if (!isGreen) {
+//     console.log("Cross the road");
+// } else {
+//     console.log("Please await");
+// }
+// con opcion simple
+// let isGreen = true;
+// if (isGreen) {
+//     console.log("Cross the road");
+// } else {
+//     console.log("Please await");
+// }
+
+// EJERCICIO JAVASCRIPT 5
+// let temperature = "Freezing point";
+// switch (temperature) {
+//   case "Absolute Zero":
+//     console.log((-273.15 * 9) / 5 + 32);
+//     break;
+//   case "Freezing point":
+//     console.log((0 * 9) / 5 + 32);
+//     break;
+//   case "Body temperature":
+//     console.log((37 * 9) / 5 + 32);
+//     break;
+//   case "Boiling point":
+//     console.log((100 * 9) / 5 + 32);
+//     break;
+//   default:
+//     console.log("There are more grades in my beer!");
+//     break;
+// }
+
+// EJERCICIO JAVASCRIPT 6
+// let email = "tolkien@lordofrings.com";
+// let password = "123456789";
+
+// let userMail = prompt("Please, enter your mail");
+// let userPassword = prompt("Please, enter your password");
+
+// if (email == userMail && password == userPassword) {
+//   alert("Welcome Mr Tolkien");
+// } else {
+//   alert("Wrong password or email");
+// }
+
+// EJERCICIO JAVASCRIPT 7
+
+// let money = 1;
+// let convertTo = "yen";
+// let dollar = 1.10;
+// let yen = 132.87;
+// let libra = 0.83;
+// let franco = 1.03;
+// switch (convertTo) {
+//   case "dollar":
+//    console.log(money * dollar);
+//     break;
+//   case "yen":
+//    console.log(money * yen);
+//     break;
+//   case "libra":
+//    console.log(money * libra);
+//     break;
+//     case "franco":
+//    console.log(money * franco);
+//     break;
+//   default:
+//     console.log("sin blanca");
+// }
+
+// EJERCICIO EXTRA DE CLASE
+// let calification = prompt("Please, enter your calification");
+// console.log(calification);
+// switch (parseInt(calification)) {
+//   case 0:
+//   case 1:
+//   case 2:
+//   case 3:
+//   case 4:
+//     alert("la cagaste");
+//     break;
+//   case 5:
+//     alert();
+//     "la cagaste";
+//     break;
+//   case 6:
+//     alert();
+//     "aprobado";
+//     break;
+//   case 7:
+//     alert();
+//     "bien";
+//     break;
+//   case 8:
+//     alert();
+//     "notable";
+//     break;
+//   case calification >= 9 && calification <= 10:
+//     alert();
+//     "te vas pa Harvard";
+//     break;
+//   default:
+//     alert();
+//     "Introduce tu nota";
+// }
+// // EJERCICIO JAVASCRIPT 8
+
+// let num1 = prompt("Please, enter the first number");
+// let num2 = prompt("Please, enter the second number");
+// let operation = prompt(
+//   "Please, choose one option: add, substract, multiply, divide"
+// );
+
+// switch (operation) {
+//   case "add":
+//     alert(parseFloat(num1) + parseFloat(num2));
+//     break;
+//   case "substract":
+//     alert(parseFloat(num1) - parseFloat(num2));
+//     break;
+//   case "multiply":
+//     alert(parseFloat(num1) * parseFloat(num2));
+//     break;
+//   case "divide":
+//     alert(parseFloat(num1) / parseFloat(num2));
+//     break;
+//   default:
+//     alert("Choose a valid option");
+//     break;
+// }
+// EJERCICIO JAVASCRIPT 9
+
+// EJERCICIO JAVASCRIPT 10
+
+let max = 6;
+let min = 1;
+let randomNumber1 = Math.floor(Math.random() * max) + min;
+console.log(randomNumber1);
