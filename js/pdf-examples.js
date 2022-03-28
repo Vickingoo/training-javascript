@@ -147,3 +147,160 @@
 //   i = i + 1; //también se puede poner i += 1;
 //   document.write(i); //con document.write aparece en el navegador no en la consola
 // } while (i < 5);
+
+// OBJETOS Y ARRAYS---------------------------
+
+// Object literal syntax
+
+// let star = {
+//   name: "Polaris",
+//   constellation: "Ursa Minor",
+//   type: "Double/Cepheid",
+//   spectralClass: "F7",
+//   mag: 2.0,
+// };
+// console.log(star);
+
+// Escribe un objeto person, que contenga, nombre, apellidos,
+// edad, dirección{tipoVia, nombreVia, num, cp,localidad},telefono
+
+let person = {
+  name: "Fulanito",
+  lastName: "Menganito",
+  age: 50,
+  address: {
+    streetType: "calle",
+    streetName: "esperanza",
+    num: 7,
+    cp: 29000,
+    location: "Málaga",
+  },
+  phone: "+34 600 600 600",
+};
+person.address.location = "Madrid";
+
+person.phone = {
+  1: "+34 600 600 600",
+  2: "+34 600 600 601",
+  3: "+34 600 600 602",
+};
+console.log(person);
+
+// Crear un objeto llamado login con las propiedades y
+// valores respectivamente
+// id => un número hexadecimal
+// state => {logged => verdadero o falso, onLine => verdadero o falso}
+// userName => "nombre"
+// loginAt: => fecha y hora
+
+let login = {
+  id: "0afbc357de69f",
+  state: {
+    logged: false,
+    onLine: false,
+  },
+  userName: "John Connor",
+  loginAt: "2022/03/28 18:15:30",
+};
+
+// Modificar el objeto person, para que incluya un email y una contraseña
+// una vez hechos los cambios pide por prompt ambos datos y modifica el objeto login
+// segun estos datos sea o no correctos
+// alert de bienvenida refiriendo el nombre
+
+person.email = "john@doe.com";
+person.password = "1234";
+console.log(person);
+let userEmail = prompt("Please, enter your email:");
+let userPass = prompt("Please, enter your password:");
+
+if (userEmail == person.email && userPass == person.password) {
+  login.state.logged = true;
+  login.state.onLine = true;
+  let loginInfo = new Date();
+  let year = loginInfo.getFullYear();
+  let month = loginInfo.getMonth() + 1;
+  let day = loginInfo.getDate();
+
+  let hour = loginInfo.getHours();
+  let minutes = loginInfo.getMinutes();
+  let seconds = loginInfo.getSeconds();
+  // loginAt: "2022/03/28 18:15:30",
+  let completeDate = `${year}/`;
+  if (month < 10) {
+    completeDate += `0${month}/`;
+  } else {
+    completeDate += `${month}/`;
+  }
+  if (day < 10) {
+    completeDate += `0${day} `;
+  } else {
+    completeDate += `${day} `;
+  }
+  if (hour < 10) {
+    completeDate += `0${hour}:`;
+  } else {
+    completeDate += `${hour}:`;
+  }
+  if (minutes < 10) {
+    completeDate += `0${minutes}:`;
+  } else {
+    completeDate += `${minutes}:`;
+  }
+  if (seconds < 10) {
+    completeDate += `0${seconds}`;
+  } else {
+    completeDate += `${seconds}`;
+  }
+  login.loginAt = completeDate;
+  alert(`Welcome ${person.name}, you logged in correctly.`);
+} else {
+  alert("Your login data are incorrect.");
+}
+
+// OBJETOS------------------------
+let hero = {
+  character: "Iron Man",
+  name: "Tony Stark",
+  powers: [
+    "Genius-levelñ intellect",
+    "Multiple powered armor suits",
+    "Ability to fly",
+  ],
+  info: {
+    yearCreated: 1963,
+    powerOrigin: "From his suit",
+    Weapons: ["repulsor rays", "uni-beam projector", "lasers"],
+    didYouKnow:
+      "Tony Stark created and built one pf Spider-Man's upgraded suits know as the Iron Spider Suit. We got a small glimpse of it in Spider-Man: Homecoming!",
+  },
+};
+
+// EJERCICIO OBJETOS----------------
+
+let shoppingCart = {
+  product1: {
+    product_id: "1",
+    name: "Nike Vomero 16",
+    price: "150,00 €",
+    quantity: "3",
+  },
+  product2: {
+    product_id: "2",
+    name: "Nike Air Pegasus 38",
+    price: "120,00 €",
+    quantity: "5",
+  },
+  product3: {
+    product_id: "3",
+    name: "Asics Gel Nimbus 20",
+    price: "100,00 €",
+    quantity: "3",
+  },
+  product4: {
+    product_id: "4",
+    name: "Mizuno Wave Shadow",
+    price: "70,00 €",
+    quantity: "6",
+  },
+};console.log();
