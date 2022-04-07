@@ -1,113 +1,4 @@
-// // FOUR SEASONS
-
-// getting real month
-// let actualDate = new Date();
-// let actualMonth = actualDate.getMonth();
-
-// if (actualMonth == 11 || actualMonth == 0 || actualMonth == 1) {
-//   season = "Winter";
-// } else if (actualMonth == 2 || actualMonth == 3 || actualMonth == 4) {
-//   season = "Spring";
-// } else if (actualMonth == 5 || actualMonth == 6 || actualMonth == 7) {
-//   season = "Summer";
-// } else if (actualMonth == 8 || actualMonth == 9 || actualMonth == 10) {
-//   season = "Autumn";
-// } else {
-//   season = "va ser que no";
-// }
-// console.log(season);
-
-// //SHOW MONTH NAME
-
-// let monthName = "";
-// switch (actualMonth) {
-//   case 0:
-//     monthName = "January";
-//     break;
-//   case 1:
-//     monthName = "February";
-//     break;
-//   case 2:
-//     monthName = "March";
-//     break;
-//   case 3:
-//     monthName = "April";
-//     break;
-//   case 4:
-//     monthName = "May";
-//     break;
-//   case 5:
-//     monthName = "June";
-//     break;
-//   case 6:
-//     monthName = "July";
-//     break;
-//   case 7:
-//     monthName = "August";
-//     break;
-//   case 8:
-//     monthName = "September";
-//     break;
-//   case 9:
-//     monthName = "October";
-//     break;
-//   case 10:
-//     monthName = "November";
-//     break;
-//   case 11:
-//     monthName = "December";
-//     break;
-//   default:
-//     monthName = "unknown name";
-// }
-// console.log(monthName);
-
-// //MARVEL ANTIHEROES
-
-// let character = "Thor";
-// switch (character) {
-//   case "Captain America":
-//     power = "Oldman in the world";
-//     break;
-//   case "Black Widow":
-//     power = "She is a 'rumbera'";
-//     break;
-//   case "Iron man":
-//     power = "Tesla man";
-//     break;
-//   case "Thor":
-//     power = "Surfer beer adict";
-//     break;
-//   case "Spiderman":
-//     power = "his friends, are Espidifrens 600mg";
-//     break;
-//   default:
-//     console.log("Choose your antihero");
-//     break;
-// }
-// console.log(power);
-
-// //CHECK A NUMBER
-
-// let number = 12;
-// switch (true) {
-//   case number < 0:
-//     console.log("under 0");
-//     break;
-//   case number >= 0 && number <= 10:
-//     console.log("between 0 and 10");
-//     break;
-//   case number > 10 && number <= 20:
-//     console.log("between 10 and 20");
-//     break;
-//   case number > 20:
-//     console.log("over 20");
-//     break;
-//   default:
-//     console.log("out of range");
-// }
-
-//  EJERCICIO JAVASCRIPT 1
+//  EJERCICIO JAVASCRIPT 1-------------------------------
 
 // let actualDate = new Date();
 // console.log(actualDate);
@@ -154,7 +45,7 @@
 //     console.log("");
 // }
 
-// EJERCICIO JAVASCRIPT 2
+// EJERCICIO JAVASCRIPT 2-------------------------------
 
 // let userChoice = prompt("Introduce el nombre del mes");
 // console.log(userChoice);
@@ -199,7 +90,8 @@
 //     console.log("that's not real month");
 // }
 
-// EJERCICIO JAVASCRIPT 3
+// EJERCICIO JAVASCRIPT 3-------------------------------
+
 // let temperature = prompt("¿Qué temperatura hace fuera?");
 // console.log(temperature);
 // switch (true) {
@@ -217,6 +109,7 @@
 // }
 
 // EJERCICIO JAVASCRIPT 3 opcion 2 con IF y ELSE pendiente de revisar
+// 
 // let temperature = 0;
 // temperature = prompt("¿Qué temperatura hace fuera?");
 
@@ -233,7 +126,8 @@
 //     alert("pregúntale a Roberto Brasero");
 // }
 
-// EJERCICIO JAVASCRIPT 4
+// EJERCICIO JAVASCRIPT 4-------------------------------
+
 // con opcion de negacion (!) que seria igual que false
 // let isGreen = true;
 // if (!isGreen) {
@@ -249,7 +143,8 @@
 //     console.log("Please await");
 // }
 
-// EJERCICIO JAVASCRIPT 5
+// EJERCICIO JAVASCRIPT 5-------------------------------
+
 // let temperature = "Freezing point";
 // switch (temperature) {
 //   case "Absolute Zero":
@@ -269,7 +164,8 @@
 //     break;
 // }
 
-// EJERCICIO JAVASCRIPT 6
+// EJERCICIO JAVASCRIPT 6-------------------------------
+
 // let email = "tolkien@lordofrings.com";
 // let password = "123456789";
 
@@ -282,7 +178,7 @@
 //   alert("Wrong password or email");
 // }
 
-// EJERCICIO JAVASCRIPT 7
+// EJERCICIO JAVASCRIPT 7-------------------------------
 
 // let money = 1;
 // let convertTo = "yen";
@@ -307,7 +203,8 @@
 //     console.log("sin blanca");
 // }
 
-// EJERCICIO EXTRA DE CLASE
+// EJERCICIO EXTRA DE CLASE-------------------------------
+
 // let calification = prompt("Please, enter your calification");
 // console.log(calification);
 // switch (parseInt(calification)) {
@@ -342,7 +239,7 @@
 //     alert();
 //     "Introduce tu nota";
 // }
-// // EJERCICIO JAVASCRIPT 8
+// // EJERCICIO JAVASCRIPT 8-------------------------------
 
 // let num1 = prompt("Please, enter the first number");
 // let num2 = prompt("Please, enter the second number");
@@ -367,11 +264,6 @@
 //     alert("Choose a valid option");
 //     break;
 // }
-// EJERCICIO JAVASCRIPT 9
+// EJERCICIO JAVASCRIPT 9-------------------------------
 
-// EJERCICIO JAVASCRIPT 10
-
-let max = 6;
-let min = 1;
-let randomNumber1 = Math.floor(Math.random() * max) + min;
-console.log(randomNumber1);
+// EJERCICIO JAVASCRIPT 10-------------------------------
